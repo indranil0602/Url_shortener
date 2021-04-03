@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+This is an web based project which takes long url as input and returns a short url.
 
-You can use the [editor on GitHub](https://github.com/indranil0602/url_shortener/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Technology Used:
+npm, express, node js, mongodb
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Create package.json.
+Install node modules express, shortid, ejs, nodemon, mongoose and update package.json.
+Update "scripts" object of package.json as following:
+  "devStart": "nodemon server.js"
+Set PORT at server.js or by default it will run on port 3000.
+Run this project and up the server with the following command in terminal:
+  npm run devStart
+Get the user interface on http://localhost:3000
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/indranil0602/url_shortener/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Make change in ./server.js to change features of the application.
+Make change in ./models/shortUrl.js to change model of data to store.
+Make change in ./views/index.ejs to change the view or the user interface.
